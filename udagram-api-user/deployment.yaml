@@ -15,7 +15,7 @@ spec:
         service: udagram-api-user
     spec:
       containers:
-      - image: omarzztelcocloud/udagram-api-user:v4
+      - image: sha3baan/udagram-api-user:v3
         name: udagram-api-user
         envFrom:
           - configMapRef:

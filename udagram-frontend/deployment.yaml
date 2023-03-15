@@ -15,7 +15,7 @@ spec:
         service: udagram-frontend
     spec:
       containers:
-      - image: omarzztelcocloud/udagram-frontend:v6
+      - image: sha3baan/udagram-frontend:v3
         name: udagram-frontend
         imagePullPolicy: Always
         resources:

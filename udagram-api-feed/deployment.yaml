@@ -15,7 +15,7 @@ spec:
         service: udagram-api-feed
     spec:
       containers:
-      - image: omarzztelcocloud/udagram-api-feed:v5
+      - image: sha3baan/udagram-api-feed:v3
         name: udagram-api-feed
         imagePullPolicy: Always
         ports:
