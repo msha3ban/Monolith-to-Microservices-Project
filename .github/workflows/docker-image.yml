@@ -25,23 +25,23 @@ jobs:
       with:
         context: ./udagram-api-feed
         push: true
-        tags: sha3baan/udagram-api-feed:v2
+        tags: sha3baan/udagram-api-feed:v3
     - name: Build and push to udagram-api-user to Docker Hub
       uses: docker/build-push-action@v4
       with:
         context: ./udagram-api-user
         push: true
-        tags: sha3baan/udagram-api-user:v2
+        tags: sha3baan/udagram-api-user:v3
     - name: Build and push to udagram-frontend to Docker Hub
       uses: docker/build-push-action@v4
       with:
         context: ./udagram-frontend
         push: true
-        tags: sha3baan/udagram-frontend:v2
+        tags: sha3baan/udagram-frontend:v3
     - name: Build and push to reverseproxy to Docker Hub
       uses: docker/build-push-action@v4
       with:
         context: ./udagram-reverseproxy
         push: true
-        tags: sha3baan/udagram-reverseproxy:v2
+        tags: sha3baan/udagram-reverseproxy:v3
 
