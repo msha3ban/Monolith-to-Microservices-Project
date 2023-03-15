@@ -19,9 +19,9 @@ spec:
         name: udagram-api-user
         envFrom:
           - configMapRef:
-              name: envconfigmap
+              name: env-configmap
           - secretRef:
-              name: envsecret
+              name: env-secret
         imagePullPolicy: Always
         resources:
           requests:

@@ -1,10 +1,13 @@
-POSTGRES_DB=postgres
-POSTGRES_HOST=myudagram.cbkmfeekeaac.us-east-1.rds.amazonaws.com
-URL=http://localhost:8100
-AWS_BUCKET=my-udagram-app
-AWS_REGION= us-east-1
-AWS_PROFILE=default
-JWT_SECRET=testing
-
-
-
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  # property-like keys; each key maps to a simple value
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: myudagram.cbkmfeekeaac.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100
+  AWS_BUCKET: my-udagram-app
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  JWT_SECRET: testing
