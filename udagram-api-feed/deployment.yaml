@@ -25,5 +25,12 @@ spec:
               name: env-secret
           - configMapRef:
               name: env-configmap
+        volumeMounts:
+          - mountPath: "/root/.aws/"
+            name: aws-secret
+      volumes:
+        - name: aws-secret
+          configMap:
+            name: aws-secret
 
 
